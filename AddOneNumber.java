@@ -1,5 +1,5 @@
 import java.util.*;
-class AddOneNumber{
+class AddOneNumber12{
 	public static ArrayList<Integer> addone(ArrayList<Integer> a){
 		int i=0;
 		while(i<a.size()-1 && a.get(i)==0){
