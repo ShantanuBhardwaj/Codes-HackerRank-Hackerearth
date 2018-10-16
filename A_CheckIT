@@ -1,0 +1,74 @@
+What is the output of the following JAVA program ?
+
+Class Test { 
+    public static void main(String[] args) { 
+        Test obj = new Test(); 
+        obj.start(); 
+    } 
+    void start() { 
+        String stra = ”do”; 
+            String strb = method(stra); 
+        System.out.print(“: ”+stra + strb); 
+    } 
+    String method(String stra) { 
+        stra = stra + ”good”; 
+        System.out.print(stra); 
+        return“ good”; 
+    } 
+} 
+(A) dogood : dogoodgood
+(B) dogood : gooddogood
+(C) dogood : dodogood
+(D) dogood : dogood
+
+
+Answer: (D) 
+
+class simple
+{
+public static void main(String[ ] args)
+{
+simple obj = new simple( );
+obj.start( );
+}
+void start( )
+{
+long [ ] P= {3, 4, 5};
+long [ ] Q= method (P);
+System.out.print (P[0] + P[1] + P[2]+”:”);
+System.out.print (Q[0] + Q[1] + Q[2]);
+}
+long [ ] method (long [ ] R)
+{
+R [1]=7;
+return R;
+}
+} //end of class
+
+(A) 12 : 15
+(B) 15 : 12
+(C) 12 : 12
+(D) 15 : 15
+
+
+Answer: (D) 
+
+
+##check the output 
+
+#include<stdio.h>
+int main()
+{
+int i = 2, k = 3;
+while (i <= 3)
+{
+    for (k = i; k < 3; k++)
+    {
+        k = i * k;
+        printf(k);
+    }
+    ++i;
+}
+return 0;
+}
+
