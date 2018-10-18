@@ -72,3 +72,76 @@ while (i <= 3)
 return 0;
 }
 
+
+
+
+#include<stdio.h>
+int main(){
+int a = 10; 
+char b = 'x'; 
+
+void *p = &a; 
+p = &b; 
+printf(p);
+return 0;
+}
+
+
+
+unsigned long int fun(unsigned long int n) {
+        unsigned long int i, j, sum = 0;
+        for( i = n; i > 1; i = i/2) j++;
+        for( ; j > 1; j = j/2) sum++;
+        return sum;
+}
+The value returned when we call fun with the input 240 is
+1)4
+2)5
+3)7
+4)6
+5)40
+
+
+In C, parameters are always
+A)Passed by value
+B)Passed by reference
+C)Non-pointer variables are passed by value and pointers are passed by reference
+D)Passed by value result
+
+Which of the following is true about return type of functions in C?
+A)Functions can return any type
+B)Functions can return any type except array and functions
+C)Functions can return any type except array, functions and union
+D)Functions can return any type except array, functions, function pointer and union
+
+class intWrap {
+   int x;
+} 
+public class Main { 
+    public static void main(String[] args) {
+       intWrap i = new intWrap();
+       i.x = 10;
+       intWrap j = new intWrap();
+       j.x = 20;
+       swap(i, j);
+       System.out.println("i.x = " + i.x + ", j.x = " + j.x);
+    } 
+    public static void swap(intWrap i, intWrap j) {
+       int temp = i.x;
+       i.x = j.x;
+       j.x = temp;
+    }
+}
+
+
+A)i.x = 20, j.x = 10
+B)i.x = 10, j.x = 20
+C)i.x = 10, j.x = 10
+D)i.x = 20, j.x = 20
+
+
+
+
+
+
+
