@@ -139,6 +139,51 @@ B)i.x = 10, j.x = 20
 C)i.x = 10, j.x = 10
 D)i.x = 20, j.x = 20
 
+*******************************************************
+
+public interface Foo 
+{ 
+    int k = 4; /* Line 3 */
+}
+Which three piece of codes are equivalent to line 3?
+1)final int k = 4;
+2)public int k = 4;
+3)static int k = 4;
+4)abstract int k = 4;
+5)volatile int k = 4;
+6)protected int k = 4;
+A.)1, 2 and 3
+B.)2, 3 and 4
+C.)3, 4 and 5
+D.)4, 5 and 6
+
+*******************************************************
+
+1. 	
+What will be the output of the program?
+
+public class CommandArgsThree 
+{
+    public static void main(String [] args) 
+    {
+        String [][] argCopy = new String[2][2];
+        int x;
+        argCopy[0] = args;
+        x = argCopy[0].length;
+        for (int y = 0; y < x; y++) 
+        {
+            System.out.print(" " + argCopy[0][y]);
+        }
+    }
+}
+and the command-line invocation is
+
+> java CommandArgsThree 1 2 3
+
+A.	0 0
+B.	1 2
+C.	0 0 0
+D.	1 2 3
 
 
 
